@@ -34,7 +34,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ github.repository }}:${{ matrix.postgres }}
+          tags: psucoder/postgres-backup-s3:${{ matrix.postgres }}
           build-args: |
             ALPINE_VERSION=${{ matrix.alpine }}
           platforms: |

@@ -6,7 +6,7 @@ set -o pipefail
 apk update
 
 # install pg_dump
-apk add postgresql16-client
+apk add postgresql16-client --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main
 
 # install gpg
 apk add gnupg
